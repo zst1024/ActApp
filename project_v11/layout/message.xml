@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/title_background">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/back_btn_image"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/layout_vertical"
+        android:layout_weight="10"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+
+    </ListView>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/textView18"
+            style="@style/layout_horizontal"
+            android:layout_weight="0.05" />
+        <EditText
+            android:id="@+id/et_meg"
+            style="@style/layout_horizontal"
+            android:layout_weight="5"
+            android:hint="请输入留言:"
+            android:inputType="textMultiLine"
+            android:background="@drawable/bg_border2"  />
+
+        <TextView
+            android:id="@+id/textView17"
+            style="@style/layout_horizontal"
+            android:layout_weight="0.05" />
+
+        <Button
+            android:id="@+id/btn_right"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/btn_float"
+            android:text="发送"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            style="@style/layout_horizontal"
+            android:layout_weight="0.05" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/title"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/title_background">
+
+        <ImageButton
+            android:id="@+id/MRC_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/back_btn_image"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        style="@style/layout_vertical"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup1"
+        style="@style/layout_vertical"
+        android:layout_weight="9">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1.您在剧烈活动时有明显的呼吸困难"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2.您在平地快走或上缓坡时感到气短"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3.您由于呼吸困难比同龄人步行的慢，或者以自己的速度在平地上行走时需要停下来呼吸"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4.您在平地上步行100米或数分钟后需要停下来呼吸"
+            android:textSize="22sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="5.您有明显的呼吸困难而不能离开房屋，或者穿脱衣服时感到气短"
+            android:textSize="22sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/MRC_before"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/blue" />
+
+        <TextView
+            android:id="@+id/textView23"
+            style="@style/layout_horizontal"
+            android:layout_weight="2" />
+
+        <ImageButton
+            android:id="@+id/MRC_next"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/green" />
+    </LinearLayout>
+
+</LinearLayout>

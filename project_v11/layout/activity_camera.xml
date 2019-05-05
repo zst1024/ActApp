@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:text="照相机"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/r2"
+        style="@style/layout_vertical"
+        android:gravity="center"
+        android:layout_weight="6">
+
+        <ImageView
+            android:id="@+id/imageView"
+            style="@style/layout_full" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/Cmrbutton"
+        style="@style/layout_vertical"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/camera" />
+
+    <TextView
+        android:id="@+id/textView8"
+        style="@style/layout_vertical"
+        android:text="点击拍照"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/title_background">
+
+        <TextView
+            android:id="@+id/camera_1"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/camera_2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/back_btn_image" />
+    </RelativeLayout>
+
+
+</LinearLayout>

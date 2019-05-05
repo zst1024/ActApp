@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/title"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/title_background">
+
+        <ImageButton
+            android:id="@+id/AppInfo_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/back_btn_image"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Acute_empty1"
+        style="@style/layout_vertical"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/Acute_Question"
+        style="@style/layout_vertical"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="症状是否急性加重"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        style="@style/layout_vertical"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/AcuteExac_before"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/blue" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            style="@style/layout_horizontal"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/touming" />
+
+        <RadioGroup
+            android:id="@+id/Acute_RG"
+            style="@style/layout_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Acute_rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="是"
+                android:textSize="25sp" />
+
+            <RadioButton
+                android:id="@+id/Acute_rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="否"
+                android:textSize="25sp" />
+
+        </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/AcuteExac_Next"
+            style="@style/layout_horizontal"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/green" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Acute_empty2"
+        style="@style/layout_vertical"
+        android:layout_weight="4" />
+</LinearLayout>

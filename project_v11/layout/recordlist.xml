@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/title_background">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/title_lly_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:descendantFocusability="beforeDescendants"
+            android:gravity="center_vertical"
+            android:onClick="onBackClick"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp" >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/recordlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

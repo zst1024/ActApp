@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/title_background">
+
+        <TextView
+            android:id="@+id/Medicine_finish"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/Medicine_return"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/back_btn_image" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Question8"
+        style="@style/layout_vertical"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="是否规律用药"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup5"
+        style="@style/layout_vertical"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:textSize="25sp">
+
+        <RadioButton
+            android:id="@+id/radioButton20"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="是"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton21"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="否"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView22"
+        style="@style/layout_vertical"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/Question9"
+        style="@style/layout_vertical"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="用药情况调查"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup4"
+        style="@style/layout_vertical"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textSize="25sp"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton18"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="更换用药"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton19"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="继续用药"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            style="@style/layout_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="停止用药"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView19"
+        style="@style/layout_vertical"
+        android:layout_weight="2" />
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/layout_full"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        style="@style/layout_vertical"
+        android:layout_weight="1"
+        android:id="@+id/title"
+        android:background="@drawable/title_background">
+
+        <TextView
+            android:id="@+id/Appinfo_finish"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:text="确定"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/Appinfo_back"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/back_btn_image" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Appinfo_empty1"
+        style="@style/layout_vertical"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/Appinfor_Question"
+        style="@style/layout_vertical"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="昨日是否就医"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/Appinfo_RG"
+        style="@style/layout_vertical"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/Appinfo_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="昨日并未就医"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/Appinfo_rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="昨日赴医院门诊"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/Appinfo_rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="昨日赴医院急诊"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/Appinfo_rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="目前在住院中"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Appinfo_empty2"
+        style="@style/layout_vertical"
+        android:layout_weight="4" />
+
+
+</LinearLayout>
